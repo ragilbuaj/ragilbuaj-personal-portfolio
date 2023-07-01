@@ -52,5 +52,5 @@
 }
 
 .background {
-  animation: backgroundAnimation 30s ease alternate infinite;
+  animation: backgroundAnimation 15s ease alternate infinite;
 }

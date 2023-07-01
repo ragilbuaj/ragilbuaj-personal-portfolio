@@ -11,8 +11,11 @@ export default {
         'neue-montreal': ['Neue Montreal', 'sans-serif'],
       },
       backgroundImage: {
-        'main-background': "url('/src/assets/main-background.jpg')",
+        'main-background': "url('/src/assets/cloud-background.jpg')",
       },
+      height: {
+        '80vh': '80vh',
+      }
     },
   },
   plugins: [],
