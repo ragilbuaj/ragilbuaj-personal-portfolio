@@ -3,10 +3,10 @@ import '../App.css';
 function Navbar() {
 
     return (
-        <header className='items-center'>
+        <header className='items-center sticky'>
             <nav className='flex justify-between items-center pb-2 border-b-2 text-stone-50'>
                 <div className='flex items-center gap-5'>
-                    <a href='#' className='font-migra text-xl'>Ragilbuaj</a>
+                    <a href='https://ragilbuaj.netlify.app/' className='font-migra text-xl hover:text-orange-200'>Ragilbuaj</a>
                     <p className='font-neue-montreal text-2xl font-semibold'>FRONTEND DEVELOPER</p>
                 </div>
                 <ul className='font-neue-montreal flex gap-2'>

@@ -38,6 +38,15 @@
   }
 }
 
+@keyframes textButtonAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .nav-link:hover::after {
   content: "";
   position: absolute;
@@ -53,4 +62,12 @@
 
 .background {
   animation: backgroundAnimation 15s ease alternate infinite;
+}
+
+.btn-text:hover {
+  animation: textButtonAnimation 0.5s ease infinite;
+}
+
+.typed-cursor {
+  display: none;
 }
