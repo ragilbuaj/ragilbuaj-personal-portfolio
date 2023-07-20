@@ -61,7 +61,7 @@
 }
 
 .background {
-  animation: backgroundAnimation 15s ease alternate infinite;
+  animation: backgroundAnimation 30s ease alternate infinite;
 }
 
 .btn-text:hover {
@@ -70,4 +70,14 @@
 
 .typed-cursor {
   display: none;
+}
+
+.active:after {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+  left: -10%;
+  width: 120%;
+  height: 1.5px;
+  background-color: white;
 }

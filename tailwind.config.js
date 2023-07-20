@@ -15,6 +15,9 @@ export default {
       },
       height: {
         '80vh': '80vh',
+      },
+      backgroundColor: {
+        'background-blue': "rgb(23, 46, 86)",
       }
     },
   },

@@ -32,10 +32,13 @@ function About() {
     };
 
     return (
-        <div className='flex flex-col gap-5 w-6/12'>
-            <h1 className='font-neue-montreal text-orange-200 text-5xl font-semibold'>Hello <FontAwesomeIcon icon={faHandsClapping} style={{ color: "#f1c31e", }} /></h1>
-            <span id='text-name' className='font-neue-montreal text-orange-200 text-5xl'></span>
-            <p id='text-about' className='font-neue-montreal text-orange-200 text-2xl'>A passionate Frontend Developer with a love for creating visually stunning and highly functional web experiences.</p>
+        <div className='flex flex-col gap-5 w-2/3 h-full border-4 border-white p-8'>
+            <h1 className='font-neue-montreal text-orange-200 text-4xl font-semibold'>Hello <FontAwesomeIcon icon={faHandsClapping} style={{ color: "#f1c31e", }} /></h1>
+            <div className='flex'>
+                <span id='text-name' className='font-neue-montreal text-orange-200 text-4xl'></span>
+                <p className='font-neue-montreal text-orange-200 text-4xl invisible'>a</p>
+            </div>
+            <p id='text-about' className='font-neue-montreal text-orange-200 text-xl'>A passionate Frontend Developer with a love for creating visually stunning and highly functional web experiences.</p>
             <button className='btn-cv bg-slate-200 w-36 text-center font-semibold p-1 rounded-2xl hover:bg-sky-900 hover:text-white' onClick={handleDownload}>
                 <span className='btn-text'>Download CV</span>
             </button>
