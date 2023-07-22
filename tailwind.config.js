@@ -18,6 +18,15 @@ export default {
       },
       backgroundColor: {
         'background-blue': "rgb(23, 46, 86)",
+      },
+      animation: {
+        contentAnimation: 'contentAnimation 1s ease',
+      },
+      keyframes: {
+        contentAnimation: {
+          '0%': { transform: 'scale(0.5)' }, 
+          '100%': { transform: 'scale(1)'}
+        }
       }
     },
   },

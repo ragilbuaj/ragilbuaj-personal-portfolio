@@ -10,23 +10,14 @@ function App() {
   const [activeAnchor, setActiveAnchor] = useState('');
   // const [anchorValue, setAnchorValue] = useState('');
   let anchorValue;
-  
-  // useEffect(() => {
-  //   switch (activeAnchor) {
-  //     case 'skills': 
-  //       setAnchorValue(<Skills />);
-  //     case 'projects':
-  //       setAnchorValue(<Projects />);
-  //     case 'contact':
-  //       setAnchorValue(<Contact />);
-  //   }
-  // }, [activeAnchor])
 
   const handleAnchorClick = (element) => {
     setActiveAnchor(element);
   }
 
-  if (activeAnchor === 'skills') {
+  if (activeAnchor === '') {
+    anchorValue = <Skills />;
+  } else if (activeAnchor === 'skills') {
     anchorValue = <Skills />;
   } else if (activeAnchor === 'projects') {
     anchorValue = <Projects />;
@@ -34,16 +25,18 @@ function App() {
     anchorValue = <Contact />;
   }
 
-  // console.log(activeAnchor);
-
   return (
     <>
-      <div className='w-full h-screen px-16 bg-auto bg-no-repeat bg-top'>
+      <div className='w-full h-screen px-16 bg-main-background bg-auto bg-no-repeat bg-top'>
         <Navbar activeAnchor={handleAnchorClick}/>
         <div className='mask-container flex py-4 px-4 mt-10 h-80vh items-center gap-2'>
-          <About />
-          <div className='w-2/3 h-full border-4 border-white p-8 flex flex-col items-center gap-8'>
-            {anchorValue}
+          <div className='w-2/3 h-full border-4 border-white p-8 rounded-lg'> 
+            <About />
+          </div>
+          <div className='w-2/3 h-full border-4 border-white rounded-lg p-8 flex flex-col items-center gap-8'>
+            <div className='animate-contentAnimation'>
+              {anchorValue}
+            </div>
           </div>
         </div>
       </div>
