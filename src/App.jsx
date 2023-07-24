@@ -29,7 +29,7 @@ function App() {
     <>
       <div className='w-full h-screen px-16 bg-main-background bg-auto bg-no-repeat bg-top'>
         <Navbar activeAnchor={handleAnchorClick}/>
-        <div className='mask-container flex py-4 px-4 mt-10 h-80vh items-center gap-2'>
+        <section className='mask-container flex py-4 px-4 mt-10 h-80vh items-center gap-2'>
           <div className='w-2/3 h-full border-4 border-white p-8 rounded-lg'> 
             <About />
           </div>
@@ -38,7 +38,7 @@ function App() {
               {anchorValue}
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </>
   )
