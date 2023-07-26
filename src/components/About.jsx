@@ -9,7 +9,7 @@ function About() {
 
     useEffect(() => {
         const typed = new Typed('#text-name', {
-            strings: ['I\'m Ragil Budhi Ajie,'],
+            strings: ['Ragil Budhi Ajie,'],
             typeSpeed: 50,
             backSpeed: 50,
             loop: true,
@@ -31,13 +31,12 @@ function About() {
 
     return (
         <div className='flex flex-col gap-5 animate-contentAnimation'>
-            <h1 className='font-neue-montreal text-orange-200 text-4xl font-semibold'>Hello <FontAwesomeIcon icon={faHandsClapping} style={{ color: "#f1c31e", }} /></h1>
-            <div className='flex'>
-                <span id='text-name' className='font-neue-montreal text-orange-200 text-4xl'></span>
-                <p className='font-neue-montreal text-orange-200 text-4xl invisible'>a</p>
+            <h1 className='font-neue-montreal text-orange-200 text-4xl font-semibold'>Hello<span className='text-white'>___</span></h1>
+            <div className='flex font-neue-montreal text-orange-200 text-4xl'>
+                <p>I'm <span id='text-name'></span></p>
             </div>
             <p id='text-about' className='font-neue-montreal text-orange-200 text-xl'>A passionate Frontend Developer with a love for creating visually stunning and highly functional web experiences.</p>
-            <button className='btn-cv bg-slate-200 w-36 text-center font-semibold p-1 rounded-2xl hover:bg-sky-900 hover:text-white hover:scale-110 transition ease' onClick={handleDownload}>
+            <button className='btn-cv bg-slate-200 w-36 text-center font-semibold p-1 rounded-2xl shadow-md shadow-black hover:bg-sky-900 hover:text-white hover:scale-110 transition ease' onClick={handleDownload}>
                 <span className='btn-text'>Download CV</span>
             </button>
             <div className='flex flex-col gap-2'>

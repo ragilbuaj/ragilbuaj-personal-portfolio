@@ -34,7 +34,7 @@ function App() {
             <About />
           </div>
           <div className='w-2/3 h-full border-4 border-white rounded-lg p-8 flex flex-col items-center gap-8'>
-            <div className='animate-contentAnimation'>
+            <div className='animate-contentAnimation w-full'>
               {anchorValue}
             </div>
           </div>
