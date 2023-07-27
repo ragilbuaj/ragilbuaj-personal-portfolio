@@ -29,19 +29,19 @@ function About() {
 	};
 
 	return (
-		<div className="flex animate-contentAnimation flex-col gap-5">
-			<h1 className="font-neue-montreal text-4xl font-semibold text-orange-200">
+		<div className="flex animate-contentAnimation flex-col gap-3">
+			<h1 className="font-neue-montreal text-2xl font-semibold text-orange-200">
 				Hello<span className="text-white">___</span>
 			</h1>
-			<div className="flex font-neue-montreal text-4xl text-orange-200">
+			<div className="flex font-neue-montreal text-xl text-orange-200">
 				<p>
-					I'm <span id="text-name"></span>
+					I'm <span id="text-name" className="text-white"></span>
 				</p>
 			</div>
-			<p id="text-about" className="font-neue-montreal text-xl text-orange-200">
+			<p id="text-about" className="text-md font-neue-montreal text-orange-200">
 				A passionate Frontend Developer with a love for creating visually stunning and highly functional web experiences.
 			</p>
-			<button className="btn-cv ease w-36 rounded-2xl bg-slate-200 p-1 text-center font-semibold shadow-md shadow-black transition hover:scale-110 hover:bg-sky-900 hover:text-white" onClick={handleDownload}>
+			<button className="btn-cv ease w-1/2 rounded-2xl bg-slate-200 p-1 text-center font-semibold shadow-md shadow-black transition hover:scale-110 hover:bg-sky-900 hover:text-white" onClick={handleDownload}>
 				<span className="btn-text">Download CV</span>
 			</button>
 			<div className="flex flex-col gap-2">

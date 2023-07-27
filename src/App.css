@@ -3,48 +3,49 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "Migra";
-    src: url("/Font/Migra/Migra-Extrabold.woff2") format("woff2"),
-      url("/Font/Migra/Migra-Extrabold.woff") format("woff");
-  }
-  @font-face {
-    font-family: "Neue Montreal";
-    src: url("/Font/Neue Montreal/NeueMontreal-Regular.otf") format("truetype");
-  }
+	@font-face {
+		font-family: "Migra";
+		src:
+			url("/Font/Migra/Migra-Extrabold.woff2") format("woff2"),
+			url("/Font/Migra/Migra-Extrabold.woff") format("woff");
+	}
+	@font-face {
+		font-family: "Neue Montreal";
+		src: url("/Font/Neue Montreal/NeueMontreal-Regular.otf") format("truetype");
+	}
 }
 
 @keyframes lineThrough {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
+	0% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
+	}
 }
 
 @keyframes backgroundAnimation {
-  0% {
-    background-position: bottom 0% right 0%;
-  }
-  25% {
-    background-position: bottom 20% right 50%;
-  }
-  50% {
-    background-position: bottom 0% left 100%;
-  }
-  100% {
-    background-position: bottom 50% right 50%;
-  }
+	0% {
+		background-position: bottom 0% right 0%;
+	}
+	25% {
+		background-position: bottom 20% right 50%;
+	}
+	50% {
+		background-position: bottom 0% left 100%;
+	}
+	100% {
+		background-position: bottom 50% right 50%;
+	}
 }
 
 @keyframes textButtonAnimation {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(100%);
-  }
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(100%);
+	}
 }
 
 /* @keyframes contentAnimation {
@@ -54,36 +55,36 @@
 } */
 
 .nav-link:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 40%;
-  left: -10%;
-  width: 120%;
-  height: 1.5px;
-  background-color: white;
-  transform-origin: left;
-  transform: scaleX(0);
-  animation: lineThrough 0.5s ease forwards;
+	content: "";
+	position: absolute;
+	bottom: 40%;
+	left: -10%;
+	width: 120%;
+	height: 1.5px;
+	background-color: white;
+	transform-origin: left;
+	transform: scaleX(0);
+	animation: lineThrough 0.5s ease forwards;
 }
 
 .background {
-  animation: backgroundAnimation 30s ease alternate infinite;
+	animation: backgroundAnimation 30s ease alternate infinite;
 }
 
 .btn-text:hover {
-  animation: textButtonAnimation 0.5s ease infinite;
+	animation: textButtonAnimation 0.5s ease infinite;
 }
 
 .typed-cursor {
-  display: none;
+	display: none;
 }
 
 .active:after {
-  content: "";
-  position: absolute;
-  bottom: 40%;
-  left: -10%;
-  width: 120%;
-  height: 1.5px;
-  background-color: white;
+	content: "";
+	position: absolute;
+	bottom: 40%;
+	left: -10%;
+	width: 120%;
+	height: 1.5px;
+	background-color: white;
 }

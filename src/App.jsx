@@ -5,6 +5,7 @@ import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 	const [activeAnchor, setActiveAnchor] = useState("");
@@ -27,16 +28,19 @@ function App() {
 
 	return (
 		<>
-			<div className="h-screen w-full bg-main-background bg-auto bg-top bg-no-repeat px-16">
+			<div className="h-full w-full px-5">
 				<Navbar activeAnchor={handleAnchorClick} />
-				<section className="mask-container mt-10 flex h-80vh items-center gap-2 px-4 py-4">
-					<div className="h-full w-2/3 rounded-lg border-4 border-white p-8">
+				<main className="mask-container flex flex-col items-center gap-2 py-4">
+					<div className="h-full w-full rounded-lg border-4 border-white p-5">
 						<About />
 					</div>
-					<div className="flex h-full w-2/3 flex-col items-center gap-8 rounded-lg border-4 border-white p-8">
+					<div className="flex h-full w-full flex-col items-center gap-8 rounded-lg p-5">
 						<div className="w-full animate-contentAnimation">{anchorValue}</div>
+						<Projects />
+						<Contact />
+						<Footer />
 					</div>
-				</section>
+				</main>
 			</div>
 		</>
 	);
