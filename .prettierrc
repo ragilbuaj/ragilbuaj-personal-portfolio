@@ -1,0 +1,10 @@
+{
+  "printWidth": 3000,
+  "useTabs": true,
+  "bracketSameLine": true,
+  "htmlWhitespaceSensitivity": "css",
+  "proseWrap": "never",
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ]
+}

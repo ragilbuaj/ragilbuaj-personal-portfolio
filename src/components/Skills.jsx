@@ -26,7 +26,7 @@ function Skills() {
             <div className='flex flex-nowrap gap-6 w-full place-content-center relative'>
                 <div className="bg-slate-200 p-3 rounded-3xl shadow-lg shadow-black hover:scale-110 hover:w-1/4 hover:bg-sky-900 hover:after:content-['#React'] hover:after:absolute hover:after:top-1/3 hover:after:left-1/2 hover:after:text-white hover:after:font-bold transition ease">
                     <img className='w-14' src={iconReact} alt='html-icon' />
-                </div> 
+                </div>
                 <div className="bg-slate-200 p-3 rounded-3xl shadow-lg shadow-black hover:scale-110 hover:w-[26%] hover:bg-sky-900 hover:after:content-['#Tailwind'] hover:after:absolute hover:after:top-1/3 hover:after:right-[10%] hover:after:text-white hover:after:font-bold transition ease">
                     <img className='w-14' src={iconTailwind} alt='html-icon' />
                 </div>
@@ -34,7 +34,7 @@ function Skills() {
                     <img className='w-14' src={iconChakra} alt='html-icon' />
                 </div>
             </div>
-        </div> 
+        </div>
     )
 }
 
