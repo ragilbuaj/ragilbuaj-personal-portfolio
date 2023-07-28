@@ -10,15 +10,15 @@ function Navbar({ activeAnchor }) {
 	};
 
 	return (
-		<header className="w-full items-center py-3">
-			<nav className="flex items-center justify-center border-b-2 pb-2 text-stone-50">
-				<div className="grid grid-cols-2 items-center">
-					<a href="https://ragilbuaj.netlify.app/" className="text-md font-migra hover:text-orange-200">
+		<header className="w-full items-center py-3 min-[1440px]:w-11/12">
+			<nav className="flex items-center justify-center border-b-2 pb-2 text-stone-50 md:justify-between">
+				<div className="grid w-full grid-cols-2 items-center sm:justify-between md:flex md:w-2/3 md:justify-start md:gap-8">
+					<a href="https://ragilbuaj.netlify.app/" className="text-md font-migra hover:text-orange-200 sm:text-lg md:text-xl min-[1440px]:text-2xl">
 						Ragilbuaj.
 					</a>
-					<p className="text-md text-right font-neue-montreal font-semibold">FRONTEND DEVELOPER</p>
+					<p className="text-md text-right font-neue-montreal font-semibold sm:text-lg md:text-left md:text-xl min-[1440px]:text-2xl">FRONTEND DEVELOPER</p>
 				</div>
-				{/* <ul className="flex gap-2 font-neue-montreal">
+				<ul className="w-1/3 justify-end gap-2 font-neue-montreal text-lg min-[375px]:hidden md:flex min-[1440px]:text-xl">
 					<li>
 						<a href="#" className={`nav-link relative ${activeElement === "skills" ? "active" : ""}`} onClick={() => handleElementClick("skills")}>
 							skills
@@ -36,7 +36,7 @@ function Navbar({ activeAnchor }) {
 							contact
 						</a>
 					</li>
-				</ul> */}
+				</ul>
 			</nav>
 		</header>
 	);

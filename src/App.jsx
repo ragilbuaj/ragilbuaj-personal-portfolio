@@ -11,6 +11,14 @@ function App() {
 	const [activeAnchor, setActiveAnchor] = useState("");
 	// const [anchorValue, setAnchorValue] = useState('');
 	let anchorValue;
+	const [screenSize, setSreensize] = useState(window.innerWidth);
+
+	useEffect(() => {
+		const handleScreenChange = () => {
+			setSreensize(window.innerWidth);
+		};
+		window.addEventListener("resize", handleScreenChange);
+	}, [screenSize]);
 
 	const handleAnchorClick = (element) => {
 		setActiveAnchor(element);
@@ -28,19 +36,25 @@ function App() {
 
 	return (
 		<>
-			<div className="h-full w-full px-5">
+			<div className="relative flex h-full w-full flex-col items-center justify-center px-5">
 				<Navbar activeAnchor={handleAnchorClick} />
-				<main className="mask-container flex flex-col items-center gap-2 py-4">
-					<div className="h-full w-full rounded-lg border-4 border-white p-5">
+				<main className="flex w-full flex-col items-center gap-2 py-4">
+					<section className="h-full w-full animate-contentAnimation rounded-lg border-4 border-white p-5 md:w-11/12">
 						<About />
-					</div>
-					<div className="flex h-full w-full flex-col items-center gap-8 rounded-lg p-5">
-						<div className="w-full animate-contentAnimation">{anchorValue}</div>
-						<Projects />
-						<Contact />
-						<Footer />
-					</div>
+					</section>
+					<section className="mb-20 flex h-full w-full flex-col items-center gap-8 rounded-lg p-5">
+						{screenSize > 767 ? (
+							<>{anchorValue}</>
+						) : (
+							<>
+								<Skills />
+								<Projects />
+								<Contact />
+							</>
+						)}
+					</section>
 				</main>
+				<Footer />
 			</div>
 		</>
 	);
