@@ -18,7 +18,7 @@ function Navbar({ activeAnchor }) {
 					</a>
 					<p className="text-md text-right font-neue-montreal font-semibold sm:text-lg md:text-left md:text-xl min-[1440px]:text-2xl">FRONTEND DEVELOPER</p>
 				</div>
-				<ul className="w-1/3 justify-end gap-2 font-neue-montreal text-lg min-[375px]:hidden md:flex min-[1440px]:text-xl">
+				<ul className="w-1/3 justify-end gap-2 font-neue-montreal text-lg min-[320px]:hidden md:flex min-[1440px]:text-xl">
 					<li>
 						<a href="#" className={`nav-link relative ${activeElement === "skills" ? "active" : ""}`} onClick={() => handleElementClick("skills")}>
 							skills
