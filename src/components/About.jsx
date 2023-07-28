@@ -20,7 +20,8 @@ function About() {
 	}, []);
 
 	const handleDownload = () => {
-		const documentUrl = "https://drive.google.com/u/1/uc?id=1r4y30y9b1lvEm9pW1cmjHr4mkY--oNHM&export=download";
+		// const documentUrl = "https://drive.google.com/u/1/uc?id=1r4y30y9b1lvEm9pW1cmjHr4mkY--oNHM&export=download";
+		const documentUrl = "https://drive.google.com/uc?id=1fgX7S8ChXUMBqSlIy4qNuYlD2Hn3THOt&export=download";
 
 		const link = document.createElement("a");
 		link.href = documentUrl;
