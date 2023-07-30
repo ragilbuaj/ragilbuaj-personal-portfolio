@@ -20,19 +20,19 @@ function Navbar({ activeAnchor }) {
 				</div>
 				<ul className="w-1/3 justify-end gap-2 font-neue-montreal text-lg min-[320px]:hidden md:flex min-[1440px]:text-xl">
 					<li>
-						<a className={`nav-link relative ${activeElement === "skills" ? "active" : ""}`} onClick={() => handleElementClick("skills")}>
+						<a className={`nav-link relative cursor-pointer ${activeElement === "skills" ? "active" : ""}`} onClick={() => handleElementClick("skills")}>
 							skills
 						</a>
 						,
 					</li>
 					<li>
-						<a className={`nav-link relative ${activeElement === "projects" ? "active" : ""}`} onClick={() => handleElementClick("projects")}>
+						<a className={`nav-link relative cursor-pointer ${activeElement === "projects" ? "active" : ""}`} onClick={() => handleElementClick("projects")}>
 							project
 						</a>
 						,
 					</li>
 					<li>
-						<a className={`nav-link relative ${activeElement === "contact" ? "active" : ""}`} onClick={() => handleElementClick("contact")}>
+						<a className={`nav-link relative cursor-pointer ${activeElement === "contact" ? "active" : ""}`} onClick={() => handleElementClick("contact")}>
 							contact
 						</a>
 					</li>
