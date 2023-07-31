@@ -6,6 +6,7 @@ import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import Backtotop from "./components/Backtotop.jsx";
 
 function App() {
 	const [activeAnchor, setActiveAnchor] = useState("");
@@ -50,6 +51,7 @@ function App() {
 								<Skills />
 								<Projects />
 								<Contact />
+								<Backtotop />
 							</>
 						)}
 					</section>
